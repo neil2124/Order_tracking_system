@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/app.css">
+    <title>The Full Cart</title>
+</head>
+<body>
+    <header class="navbar"> 
+        <p class="logo">The <span class="coral">Full</span> Cart</p>
+        <nav>
+            <ul class="nav_links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/trackOrder">Track Order</a></li> 
+                <li><a href="/cancelOrder">CancelOrder</a></li>
+                
+            </ul>
+        </nav>
+        
+    </header>
+    <div class="form">
+
+        <form  method="POST" action="/register">
+            <label >Name</label>
+            <input type="text" name="name"  /> <br>
+            <label>Street Name</label>
+            <input type="text" name="street_name" /> <br>
+            <label>Zipcode</label>
+            <input type="text" name="zipcode" /> <br>
+            <label>Landmark</label>
+            <input type="text" name="landmark" /> <br>
+            <label>email</label>
+            <input type="email" name="email" /> <br>
+            <button class="send-btn">Join Now</button>
+        </form>
+    </div>
+    <p class="register-para">Already Registered??? <a class="place-btn" href="/placeOrder">Place An Order</a></p>
+
+   
+</body>
+</html>

@@ -1,0 +1,132 @@
+
+.navbar li,a{
+   font-size: 16px;
+    font-weight: 500;
+    color:#edf0f1;
+    text-decoration: none;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px;
+    background-color: #24252A;
+    margin: 0;
+}
+
+.coral{
+    color: coral;
+}
+
+.logo{
+    cursor: pointer;
+    font-size: 20px;
+    color:white
+}
+
+.nav_links{
+    list-style: none;
+}
+
+.nav_links li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav_links li a{
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover{
+    color: #0088a9;
+}
+
+
+body{
+    box-sizing: border-box;
+   
+    
+}
+
+/* The Home Page Styles*/
+
+.form{
+    max-width: 500px;
+    margin: 2rem auto;
+    border: 2px solid black;
+    padding:2rem
+     
+}
+
+label{
+    display:block;
+    padding:10px 0;
+    text-transform: uppercase;
+}
+input{
+    display: block;
+    width:100%;
+    border-radius: 5px;
+    padding:5px;
+    border-color:lightblue;
+}
+
+.send-btn{
+    border:0;
+    background: #343050;
+    color:white;
+    margin:1rem 0;
+    padding:7px;
+    width: auto;
+    text-transform:uppercase;
+    cursor: pointer;
+    transition: .3s background ease;
+    border-radius: 7px;
+}
+
+.send-btn:hover {
+    background: #3498DB;
+}
+
+.place-btn:hover{
+    background: #3498DB;
+}
+
+p{
+    display: block;
+    text-align: center;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 17px;
+}
+
+.register-para{
+    margin-bottom: 50px;
+}
+
+.register-para a{
+    margin-left: 20px;
+    font-size: 15px;
+    padding: 6px;
+    text-decoration: none;
+    color:white;
+    text-align: center;
+    background-color: coral;
+    border-radius: 7px;
+    transition: .3s background ease;
+}
+
+
+/* End Of Home Page Styles*/
+
+.canc-orders h1{
+    text-align: center;
+}
+.canc-orders p{
+    text-align: center;
+    font-size: 14;
+    color:blue
+}
+

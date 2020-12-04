@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="orders.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="navbar"> 
+        <p class="logo">The <span class="coral">Full</span> Cart</p>
+        <nav>
+            <ul class="nav_links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/trackOrder">Track Order</a></li> 
+                <li><a href="/cancelOrder">CancelOrder</a></li>
+                
+            </ul>
+        </nav>
+        
+    </header>
+    <h1>You Have Cancelled The Following Order</h1>
+    <table class="content-table">
+        <thead>
+          <tr>
+            <th>Customer ID</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Package</th>
+          </tr>
+        </thead>
+        <tbody>
+            
+                <tr>
+                    <td><%= data.customer_id %></td>
+                    <td><%= data.name %></td>
+                    <td><%= data.email %></td>
+                    <td><%= data.package %></td>
+                </tr>
+            
+           
+        </tbody>
+      </table>
+
+</body>
+</html>

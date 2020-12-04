@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="orders.css">
+    <link rel="stylesheet" href="app.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="navbar"> 
+        <p class="logo">The <span class="coral">Full</span> Cart</p>
+        <nav>
+            <ul class="nav_links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/trackOrder">Track Order</a></li> 
+                <li><a href="/cancelOrder">CancelOrder</a></li>
+                
+            </ul>
+        </nav>
+        
+    </header>
+
+<h2 class="email"><%= yourOrders[0].email %></h2>
+
+
+<br><br>
+<h2>Your Orders</h2>
+
+<table class="content-table">
+    <thead>
+      <tr>
+        <th>Package</th>
+        <th>Shipment Address</th>
+        <th>Shippment Status</th>
+        <th>Shipping Company</th>
+      </tr>
+    </thead>
+    <tbody>
+        <% yourOrders.forEach(order =>{ %>
+            <tr>
+                <td><%= order.package %></td>
+                <td><%= order.shipped_from %></td>
+                <td><%= order.shipment_status %></td>
+                <td><%= order.name %></td>
+            </tr>
+        
+        <% }) %>
+    </tbody>
+  </table>
+ 
+</body>
+</html>
+
+

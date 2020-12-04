@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="navbar"> 
+        <p class="logo">The <span class="coral">Full</span> Cart</p>
+        <nav>
+            <ul class="nav_links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/trackOrder">Track Order</a></li> 
+                <li><a href="/cancelOrder">CancelOrder</a></li>
+                
+            </ul>
+        </nav>
+        
+    </header>
+    <div class="form">
+        <form method="POST" action="/placedorders">
+            <label>Please Enter Your Customer Id</label>
+            <input name="customer_id" />
+            <button class="send-btn">submit</button>
+        </form>
+
+    </div>
+</body>
+</html>
